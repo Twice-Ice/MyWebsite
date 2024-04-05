@@ -1,0 +1,49 @@
+:root {
+	--bgColor: rgb(79, 243, 221);
+	--header: rgb(255, 255, 255);
+	--subHeader: rgba(255, 255, 255, .8);
+}
+
+body {
+	background-color: var(--bgColor);
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+p {
+	font-family: verdana;
+	font-size: 20px;
+}
+
+h1.my-name {
+	color: var(--header);
+}
+
+.small-text {
+	font-size: .75em;
+	color: var(--subHeader); 
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	height:100vh
+}
+
+.img-container {
+	margin-right: 20px;
+}
+
+.side-img {
+	width: 200px;
+	height: auto;
+}
+
+.text-container {
+	flex: 1;
+	text-align: center;
+	overflow: hidden;
+}
