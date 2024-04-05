@@ -1,49 +1,39 @@
 :root {
 	--bgColor: rgb(79, 243, 221);
-	--header: rgb(255, 255, 255);
-	--subHeader: rgba(255, 255, 255, .8);
+	--header: rgb(255, 255, 255); /*h1 styling*/
+	--subHeader: rgba(255, 255, 255, .8); /*subtext that should go within h1's. Such as pronouns or other notes.*/
 }
 
 body {
 	background-color: var(--bgColor);
 }
 
+/*default h1 styling*/
 h1 {
-	color: white;
+	color: var(--header);
 	text-align: center;
 }
 
+/*styling for my name
+inherits color values from h1 for consistency
+*/
+h1.my-name {
+	text-align: left;
+}
+
+/*header subHeader*/
+.sub-text {
+	font-size: .75em;
+	color: var(--subHeader); 
+}
+
+/*default paragraph styling*/
 p {
 	font-family: verdana;
 	font-size: 20px;
 }
 
-h1.my-name {
-	color: var(--header);
-}
-
-.small-text {
-	font-size: .75em;
-	color: var(--subHeader); 
-}
-
-.container {
-	display: flex;
-	align-items: center;
-	height:100vh
-}
-
-.img-container {
-	margin-right: 20px;
-}
-
-.side-img {
-	width: 200px;
-	height: auto;
-}
-
-.text-container {
-	flex: 1;
-	text-align: center;
-	overflow: hidden;
+/*a class to remove all decoration that may have been applied to a link or other thing.*/
+.no-decor {
+	text-decoration: none;
 }
