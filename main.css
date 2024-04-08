@@ -37,3 +37,10 @@ p {
 .no-decor {
 	text-decoration: none;
 }
+
+.core-link {
+	font-family: verdana;
+	font-size: 70px;
+	text-align: center;
+	color: var(--header);
+}
