@@ -45,6 +45,16 @@ p {
 	color: var(--header);
 }
 
+.bgimg-1 {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: "images/seniorPic.png";
+	min-height: 100%;
+}
+
+/*the following 4 classes are classes for images that have text and are clickable.*/
 .image-text-link {
 	position: relative;
 	display: inline-block;
