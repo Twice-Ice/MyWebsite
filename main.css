@@ -44,3 +44,29 @@ p {
 	text-align: center;
 	color: var(--header);
 }
+
+.image-text-link {
+	position: relative;
+	display: inline-block;
+	margin: 2vw;
+	text-align: center;
+}
+
+.link {
+	display: block;
+}
+
+.image {
+	width: 45vw;
+	display: block;
+}
+
+.text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--bgColor);
+	pointer-events: none;
+	font-size: 4.5vw;
+}
